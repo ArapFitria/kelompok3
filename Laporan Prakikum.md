@@ -10,7 +10,9 @@
 
 1. Rename ubuntu_php5.6 menjadi ubuntu_landing
 
-`sudo lxc-copy -R ubuntu_php5.6 name -N ubuntu_landing`
+   ```
+   sudo lxc-copy -R ubuntu_php5.6 name -N ubuntu_landing
+   ```
 
 2. Cek apakah container tersebut sudah ter-rename
 
