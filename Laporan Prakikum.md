@@ -8,20 +8,20 @@
 
 
 
-1. Rename ubuntu_php5.6 menjadi ubuntu_landing
+1. Rename ubuntu_php5.6 to ubuntu_landing
 
    ```
    sudo lxc-copy -R ubuntu_php5.6 name -N ubuntu_landing
    ```
 
-2. Cek apakah container tersebut sudah ter-rename
+2. Check if the container has been renamed
 
    ```
    lxc-ls -f
    ```
    ![1](https://user-images.githubusercontent.com/92453574/138603435-4e467f41-3a8c-454d-9ca9-60b6c296e7b4.PNG)
 
-3. mulai dan masuk ke ubuntu_landing
+3. start and go to ubuntu_landing
 
    ```
    sudo lxc-start -n ubuntu_landing
@@ -29,7 +29,7 @@
    sudo lxc-attach -n ubuntu_landing
    ```
 
-4. Ganti IP
+4. Change the IP
 
    ```
    nano /etc/network/interfaces
@@ -37,26 +37,26 @@
    ![4](https://user-images.githubusercontent.com/92453574/138603479-83b9907c-9a57-4d66-99a6-c17745c5daac.PNG)
    
 
-5. Cek IP, sudah ganti atau belum
+5. Check the IP, has it change or not
 
    ```
    ifconfig
    ```
    ![5](https://user-images.githubusercontent.com/92453574/138603480-00fa71a4-9f3b-4535-891b-12cc5cf2cfce.PNG)
 
-6. Keluar dari ubuntu_landing
+6. Exit ubuntu_landing
 
    ```
    exit
    ```
 
-7. Install lxc debian 9 dengan nama debian_php5.6
+7. Install lxc debian 9 with the name debian_php5.6
 
    ```
    sudo lxc-create -n debian_php5.6 -t download -- --dist debian --release stretch --arch amd64 --force-cache --no-validate --server images.linuxcontainers.org
    ```
 
-8. Cek container
+8. Check the container
 
    ```
    sudo lxc-ls -f
@@ -80,7 +80,7 @@
 
    ![6](https://user-images.githubusercontent.com/92453574/138603482-2c55f0f2-1b09-4d19-82a1-8cdc66a0ef97.PNG)
 
-3. Cek IP, sudah berubah atau belum
+3. Check the IP, has it changed or not
 
    ```
    ifconfig
@@ -89,34 +89,30 @@
   
 4. NGINX
 
-   ​	a.    nstall nginx
+   ​	a.    Install nginx
 
-   ```
-   apt install nginx nginx-extras -y
-   ```
+      ```
+      apt install nginx nginx-extras -y
+      ```
 
    ​	b.    Setting nginx (1)
 
-   ```
-   cd /etc/nginx/sites-available
-
-   touch lxc_php5.6.dev
-
-   nano lxc_php5.6.dev
-   
-   ```
-   ![8](https://user-images.githubusercontent.com/92453574/138603486-49fade2c-e7d4-432c-8bce-b02dabee58ec.PNG)
-
-   
+      ```
+      cd /etc/nginx/sites-available
+      touch lxc_php5.6.dev
+      nano lxc_php5.6.dev
+      ```
+      
+      ![8](https://user-images.githubusercontent.com/92453574/138603486-49fade2c-e7d4-432c-8bce-b02dabee58ec.PNG)
 
    ​	c.    Setting nginx (2)
 
-   ```
-   cd ../sites-enabled
-   ln -s /etc/nginx/sites-available/lxc_php5.6.dev .
-   nginx -t
-   nginx -s reload
-   ```
+      ```
+      cd ../sites-enabled
+      ln -s /etc/nginx/sites-available/lxc_php5.6.dev .
+      nginx -t
+      nginx -s reload
+      ```
 
 5. Setting host
 
@@ -135,7 +131,7 @@
    cd /lxc_php5.6
    nano index.html
    ```
-![10](https://user-images.githubusercontent.com/92453574/138603490-b2d51be0-2062-42b3-bcda-87fa6f52afb1.PNG)
+   ![10](https://user-images.githubusercontent.com/92453574/138603490-b2d51be0-2062-42b3-bcda-87fa6f52afb1.PNG)
 
 7. Curl
 
@@ -151,9 +147,7 @@
 
       ```
       cd /etc/nginx/sites-available
-
       touch lxc_php5.6.dev
-
       nano lxc_php5.6.dev
       ```
 
@@ -233,9 +227,9 @@
       curl -i http://vm.local/blog
       ```
 
-**HASIL**
+**RESULT**
 
-1. Buka di google
+1. Open on google
    a. vm.local
       ![15](https://user-images.githubusercontent.com/92453574/138604625-4418ee9e-81b5-48a2-a959-dca97a7ac76e.PNG)
 
