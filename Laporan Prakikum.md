@@ -236,7 +236,8 @@
 **HASIL**
 
 1. Buka di google
-   a. vm.local
+  
+  a. vm.local
 
       ![15](https://user-images.githubusercontent.com/92453574/138603501-01e59392-b29d-491c-b736-e6ec8a448e71.PNG)
 
