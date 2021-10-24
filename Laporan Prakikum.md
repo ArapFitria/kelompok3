@@ -16,7 +16,9 @@
 
 2. Cek apakah container tersebut sudah ter-rename
 
-   `lxc-ls -f`
+   ```
+   lxc-ls -f
+   ```
 
    !![1](https://user-images.githubusercontent.com/92453574/138603435-4e467f41-3a8c-454d-9ca9-60b6c296e7b4.PNG)
 
