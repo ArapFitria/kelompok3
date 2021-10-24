@@ -155,7 +155,7 @@
 
    b. Setting nginx(2)
 
-       ```
+      ```
       cd ../sites-enabled
       ln -s /etc/nginx/sites-available/lxc_php5.6.dev .
       nginx -t
@@ -198,7 +198,7 @@
    ```
    sudo lxc-start -n ubuntu_php7.4
    sudo lxc-start -n debian_php5.6
-   '''
+   ```
 
 3. NGINX
 
