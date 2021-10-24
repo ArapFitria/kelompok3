@@ -236,16 +236,12 @@
 **HASIL**
 
 1. Buka di google
-  
-  a. vm.local
-
-      ![15](https://user-images.githubusercontent.com/92453574/138603501-01e59392-b29d-491c-b736-e6ec8a448e71.PNG)
+   a. vm.local
+      ![15](https://user-images.githubusercontent.com/92453574/138604625-4418ee9e-81b5-48a2-a959-dca97a7ac76e.PNG)
 
    b. vm.local/app
-
       ![16](https://user-images.githubusercontent.com/92453574/138603502-e347bcb5-b63c-4e35-ba37-b44d5c467129.PNG)
 
    c. vm.local/blog
-
       ![17](https://user-images.githubusercontent.com/92453574/138603504-38f8ead1-9d93-4a93-96dc-1b88470eef95.PNG)
 
