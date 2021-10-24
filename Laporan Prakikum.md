@@ -30,53 +30,62 @@
 
 4. Ganti IP
 
-   `nano /etc/network/interfaces` !
+   ```
+   nano /etc/network/interfaces
+   ``` 
    ![4](https://user-images.githubusercontent.com/92453574/138603479-83b9907c-9a57-4d66-99a6-c17745c5daac.PNG)
-
-   
-
    
 
 5. Cek IP, sudah ganti atau belum
 
-`ifconfig`
-![5](https://user-images.githubusercontent.com/92453574/138603480-00fa71a4-9f3b-4535-891b-12cc5cf2cfce.PNG)
-
+   ```
+   ifconfig
+   ```
+   ![5](https://user-images.githubusercontent.com/92453574/138603480-00fa71a4-9f3b-4535-891b-12cc5cf2cfce.PNG)
 
 6. Keluar dari ubuntu_landing
 
-   `exit`
+   ```
+   exit
+   ```
 
 7. Install lxc debian 9 dengan nama debian_php5.6
 
-   `sudo lxc-create -n debian_php5.6 -t download -- --dist debian --release stretch --arch amd64 --force-cache --no-validate --server images.linuxcontainers.org`
-
-   
+   ```
+   sudo lxc-create -n debian_php5.6 -t download -- --dist debian --release stretch --arch amd64 --force-cache --no-validate --server images.linuxcontainers.org
+   ```
 
 8. Cek container
 
-   `Sudo lxc-ls -f` 
+   ```
+   sudo lxc-ls -f
+   ``` 
+   ![3](https://user-images.githubusercontent.com/92453574/138603474-566e03c2-c9f8-4ffa-8746-c6cec2830738.PNG)
 
-![3](https://user-images.githubusercontent.com/92453574/138603474-566e03c2-c9f8-4ffa-8746-c6cec2830738.PNG)
 
 **DEBIAN_PHP5.6**
 
 1. Install net tools
 
-   `Apt install nano net-tools curl -y`
+   ```
+   apt install nano net-tools curl -y
+   ```
 
 2. Setting IP
 
-   `nano /etc/network/interfaces`
+   ```
+   nano /etc/network/interfaces
+   ```
 
-![6](https://user-images.githubusercontent.com/92453574/138603482-2c55f0f2-1b09-4d19-82a1-8cdc66a0ef97.PNG)
+   ![6](https://user-images.githubusercontent.com/92453574/138603482-2c55f0f2-1b09-4d19-82a1-8cdc66a0ef97.PNG)
 
 3. Cek IP, sudah berubah atau belum
 
-   `ifconfig`
-![7](https://user-images.githubusercontent.com/92453574/138603483-1e1a7bfc-6be3-465e-8f07-07472b1bed7c.PNG)
+   ```
+   ifconfig
+   ```
+   ![7](https://user-images.githubusercontent.com/92453574/138603483-1e1a7bfc-6be3-465e-8f07-07472b1bed7c.PNG)
   
-
 4. NGINX
 
    ​	a.    nstall nginx
