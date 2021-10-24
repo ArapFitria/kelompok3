@@ -19,8 +19,7 @@
    ```
    lxc-ls -f
    ```
-
-   !![1](https://user-images.githubusercontent.com/92453574/138603435-4e467f41-3a8c-454d-9ca9-60b6c296e7b4.PNG)
+   ![1](https://user-images.githubusercontent.com/92453574/138603435-4e467f41-3a8c-454d-9ca9-60b6c296e7b4.PNG)
 
 3. mulai dan masuk ke ubuntu_landing
 
@@ -92,16 +91,20 @@
 
    ​	a.    nstall nginx
 
-   `apt install nginx nginx-extras -y`
+   ```
+   apt install nginx nginx-extras -y
+   ```
 
    ​	b.    Setting nginx (1)
 
-   `cd /etc/nginx/sites-available`
+   ```
+   cd /etc/nginx/sites-available
 
-   `touch lxc_php5.6.dev`
+   touch lxc_php5.6.dev
 
-   `nano lxc_php5.6.dev`
-
+   nano lxc_php5.6.dev
+   
+   ```
    ![8](https://user-images.githubusercontent.com/92453574/138603486-49fade2c-e7d4-432c-8bce-b02dabee58ec.PNG)
 
    
@@ -133,9 +136,6 @@
    nano index.html
    ```
 ![10](https://user-images.githubusercontent.com/92453574/138603490-b2d51be0-2062-42b3-bcda-87fa6f52afb1.PNG)
-  
-
-   
 
 7. Curl
 
@@ -143,36 +143,39 @@
    curl -i http://lxc_php5.dev 
    ```
 
-   
-
 **UBUNTU_LANDING**
 
 1. NGINX
 
    a. Setting nginx(1)
 
-   `cd /etc/nginx/sites-available`
+      ```
+      cd /etc/nginx/sites-available
 
-   `touch lxc_php5.6.dev`
+      touch lxc_php5.6.dev
 
-   `nano lxc_php5.6.dev`
+      nano lxc_php5.6.dev
+      ```
 
-![11](https://user-images.githubusercontent.com/92453574/138603491-b4385ec0-4dd6-4a0e-a4e1-cd9396426928.PNG)
+      ![11](https://user-images.githubusercontent.com/92453574/138603491-b4385ec0-4dd6-4a0e-a4e1-cd9396426928.PNG)
 
    b. Setting nginx(2)
 
-   `cd ../sites-enabled`
-   `ln -s /etc/nginx/sites-available/lxc_php5.6.dev .`
-   `nginx -t`
-   `nginx -s reload`
+       ```
+      cd ../sites-enabled
+      ln -s /etc/nginx/sites-available/lxc_php5.6.dev .
+      nginx -t
+      nginx -s reload
+      ```
 
 2. Setting index
 
-   `cd /var/www/html/lxc_php5.6/`
+   ```
+   cd /var/www/html/lxc_php5.6/
+   nano index.html
+   ```
 
-   `nano index.html`
-
- ![12](https://user-images.githubusercontent.com/92453574/138603495-4b93cbbf-2623-44e8-bc88-1c564c05f547.PNG)
+   ![12](https://user-images.githubusercontent.com/92453574/138603495-4b93cbbf-2623-44e8-bc88-1c564c05f547.PNG)
 
 3. Curl
 
@@ -182,9 +185,9 @@
 
 4. Auto start
 
-`echo "lxc.start.auto=1">> /var/lib/lxc/ubuntu_landing/config`
-
-
+   ```
+   echo "lxc.start.auto=1">> /var/lib/lxc/ubuntu_landing/config
+   ```
 
 **VM LOCAL**
 
@@ -194,59 +197,54 @@
    sudo nano /etc/hosts
    ```
 
- ![13](https://user-images.githubusercontent.com/92453574/138603497-8f2c8ad6-768b-4ae0-86fe-5f4f2283b6c2.PNG)
+   ![13](https://user-images.githubusercontent.com/92453574/138603497-8f2c8ad6-768b-4ae0-86fe-5f4f2283b6c2.PNG)
 
 2. Start container ubuntu_landing, Debian_php5.6, ubuntu_php7.4
 
-   `sudo lxc-start -n ubuntu_php7.4`
-
-   `sudo lxc-start -n debian_php5.6`
-
-   
+   ```
+   sudo lxc-start -n ubuntu_php7.4
+   sudo lxc-start -n debian_php5.6
+   '''
 
 3. NGINX
 
    a. Setting nginx(1)
 
-   ```
-   cd /etc/nginx/sites-available
-   sudo nano vm.local
-   ```
+      ```
+      cd /etc/nginx/sites-available
+      sudo nano vm.local
+      ```
 
-  ![14](https://user-images.githubusercontent.com/92453574/138603499-67fda872-56f6-4c67-8ef7-462aec75fbfe.PNG)
+      ![14](https://user-images.githubusercontent.com/92453574/138603499-67fda872-56f6-4c67-8ef7-462aec75fbfe.PNG)
 
    b. Setting nginx(2)
 
-   ```
-   sudo ln -s /etc/nginx/sites-available/vm.local .
-   sudo nginx -t
-   sudo nginx -s reload
-   ```
+      ```
+      sudo ln -s /etc/nginx/sites-available/vm.local .
+      sudo nginx -t
+      sudo nginx -s reload
+      ```
 
-   C. Curl
+   c. Curl
 
-```
-curl -i http://vm.local/php5
-curl -i http://vm.local/app
-curl -i http://vm.local/blog
-```
+      ```
+      curl -i http://vm.local/php5
+      curl -i http://vm.local/app
+      curl -i http://vm.local/blog
+      ```
 
 **HASIL**
 
 1. Buka di google
-
    a. vm.local
 
- ![15](https://user-images.githubusercontent.com/92453574/138603501-01e59392-b29d-491c-b736-e6ec8a448e71.PNG)
+      ![15](https://user-images.githubusercontent.com/92453574/138603501-01e59392-b29d-491c-b736-e6ec8a448e71.PNG)
 
    b. vm.local/app
 
-  ![16](https://user-images.githubusercontent.com/92453574/138603502-e347bcb5-b63c-4e35-ba37-b44d5c467129.PNG)
+      ![16](https://user-images.githubusercontent.com/92453574/138603502-e347bcb5-b63c-4e35-ba37-b44d5c467129.PNG)
 
    c. vm.local/blog
 
-![17](https://user-images.githubusercontent.com/92453574/138603504-38f8ead1-9d93-4a93-96dc-1b88470eef95.PNG)
+      ![17](https://user-images.githubusercontent.com/92453574/138603504-38f8ead1-9d93-4a93-96dc-1b88470eef95.PNG)
 
-
-
-​	
