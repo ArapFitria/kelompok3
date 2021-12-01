@@ -13,7 +13,7 @@
      lxc-destroy ubuntu_landing
      ```
 
-     ![](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no1\no1\1.PNG)
+     ![1](https://user-images.githubusercontent.com/92453574/144299793-22ddbd42-a752-4268-b40b-23cd31f9c8d7.PNG)
 
      
 
