@@ -90,78 +90,81 @@
 2. **Rubah LXC php7 dengan ubuntu focal (destroy n create, same ip, same name)**
 
    - menghapus container ubuntu php 7.4
-
-     `lxc-destroy ubuntu_php7.4 -f`
-
-     ![](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no2\no2\1.PNG)
+     ```
+     lxc-destroy ubuntu_php7.4 -f
+     ```
+     ![1](https://user-images.githubusercontent.com/92453574/144300831-2b9c422c-ef7c-4083-8e01-162f0b50c45b.PNG)
 
      
 
    - buat container lxc ubuntu versi focal 
 
-     `sudo lxc-create -n ubuntu_php7.4 -t download -- --dist ubuntu --release focal --arch amd64 --force-cache --no-validate --server images.linuxcontainers.org`
-
-     ![2](D:\KULIAH\.tugas kuliah\sem 5\SAS\\modul 2\no2\no2\2.PNG)
+     ```
+     sudo lxc-create -n ubuntu_php7.4 -t download -- --dist ubuntu --release focal --arch amd64 --force-cache --no-validate --server images.linuxcontainers.org
+     ```
+     ![2](https://user-images.githubusercontent.com/92453574/144300838-a0bb2818-9fec-4b31-964c-30ddecfc000e.PNG)
 
      
 
-     `lxc-start -n ubuntu_php7.4`
+     ```
+     lxc-start -n ubuntu_php7.4
 
-     `lxc-attach -n ubuntu_php7.4`
+     lxc-attach -n ubuntu_php7.4
 
-     `apt-get install nano net-tools curl`
-
-     ![3](D:\KULIAH\.tugas kuliah\sem 5\SAS\\modul 2\no2\no2\3.PNG)
+     apt-get install nano net-tools curl
+     ```
+     ![3](https://user-images.githubusercontent.com/92453574/144300843-1f50b602-b87a-467e-aacd-c8980f20d317.PNG)
 
      
 
    - konfigurasi menjadi IP statik 
 
-     `sudo nano /etc/netplan/10-lxc.yaml`
-
-     ![4](D:\KULIAH\.tugas kuliah\sem 5\SAS\\modul 2\no2\no2\4.PNG)
+     ```
+     nano /etc/netplan/10-lxc.yaml
+     ```
+     ![4](https://user-images.githubusercontent.com/92453574/144300848-a579ee09-4946-49de-bbc3-5192549e07db.PNG)
 
      
 
-     `netplan apply`
-
-     ![5](D:\KULIAH\.tugas kuliah\sem 5\SAS\\modul 2\no2\no2\5.PNG)
-
-     ![6](D:\KULIAH\.tugas kuliah\sem 5\SAS\\modul 2\no2\no2\6.PNG)
+     ```
+     netplan apply
+     ```
+     ![5](https://user-images.githubusercontent.com/92453574/144300855-0609de6f-54e2-4cc0-981b-578e6cd673c3.PNG)
+     ![6](https://user-images.githubusercontent.com/92453574/144300859-f768f068-fd9a-4cbe-8dfc-6c6756ec1a32.PNG)
 
      
 
    - kemudian install open ssh server 
-
-     `apt-get install openssh-server -y`
-
-     ![7](D:\KULIAH\.tugas kuliah\sem 5\SAS\\modul 2\no2\no2\7.PNG)
+     ```
+     apt-get install openssh-server -y
+     ```
+     ![7](https://user-images.githubusercontent.com/92453574/144300866-0138797e-b29a-42e6-8c05-0c1f6df94f55.PNG)
 
      
 
    - lalu lakukan konfigurasi ssh
-   
-     `nano /etc/ssh/sshd_config`
-   
-     ![8](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no2\no2\8.PNG)
+     ```
+     nano /etc/ssh/sshd_config
+     ```
+     ![8](https://user-images.githubusercontent.com/92453574/144300870-a73e2dd2-f132-4ebb-a130-feb30dedfc72.PNG)
    
      
    
-     - buat password baru
-     
-       `service sshd restart`
-     
-       `passwd`
-     
-       ![9](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no2\no2\9.PNG)
+    - buat password baru
+      ```
+      service sshd restart
+    
+      passwd
+      ```
+      ![9](https://user-images.githubusercontent.com/92453574/144300874-127b83e1-4812-4249-bdbb-79244b9a2ea6.PNG)
      
        
      
-     - cek ssh 
-     
-       `ssh root@10.0.3.103`
-     
-       ![10](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no2\no2\10.PNG)
+    - cek ssh      
+      ```
+      ssh root@10.0.3.103
+      ```
+       ![10](https://user-images.githubusercontent.com/92453574/144300879-49c0df44-d732-465c-8435-a4190fb4b62b.PNG)
      
      
      
