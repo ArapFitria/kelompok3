@@ -78,7 +78,6 @@
      ```
      ssh root@10.0.3.103
      ```
-   
      ![10](https://user-images.githubusercontent.com/92453574/144299827-8eaab05a-75be-477f-8004-217886bf5548.PNG)
      
      
@@ -118,7 +117,6 @@
      
 
    - konfigurasi menjadi IP statik 
-
      ```
      nano /etc/netplan/10-lxc.yaml
      ```
@@ -173,28 +171,29 @@
 3. **vm.local/**
 
    - masuk ansible untuk install laravel
-
+     ```
      cd ~/ansible/
      mkdir laravel
      cd laravel/
      nano host
-
-     ![1](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no3\no3\1.PNG)
+     ```
+     ![1](https://user-images.githubusercontent.com/92453574/144301593-f18e2bda-d425-4e6a-b85f-65acfafd075e.PNG)
 
      
 
    - membuat host untuk lxc
-
+     ```
      nano host
 
      ubuntu_landing ansible_host=lxc_landing.dev ansible_ssh_user=root ansible_become_pass=1234
-
-     ![2](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no3\no3\2.PNG)
+     ```
+     ![2](https://user-images.githubusercontent.com/92453574/144301601-a5f9234b-dceb-48dc-9c88-48da68c759e5.PNG)
 
      
 
    - buat direktori yang akan dijalankan pada folder php dam install di nginxphp.yml
-
+     ```
+     ---
      - hosts: all
        become : yes
        tasks:
@@ -234,25 +233,24 @@
                    - php7.4-zip
                    - php7.4-common
                         state: present
-
-     ![3](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no3\no3\3.PNG)
-
+      ```
+     ![3](https://user-images.githubusercontent.com/92453574/144301603-cb73c3ea-2302-403d-bb27-d0173d1c6a5a.PNG)
      
 
    - instalasi
-
-     `ansible-playbook -y hosts nginxphp.yml -k`
-
-     ![4](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no3\no3\4.PNG)
+     ```
+     ansible-playbook -y hosts nginxphp.yml -k
+     ```
+     ![4](https://user-images.githubusercontent.com/92453574/144301605-731cbe03-112b-4915-9bf8-794cf3d692d6.PNG)
 
      
 
    - buat folder installcomposer.yml
-
+     ```
+     ---
      -hosts: all
        become : yes
        tasks:
-
         - name: Download and install Composer
           shell: curl -sS https://getcomposer.org/installer | php
           args:
@@ -309,21 +307,21 @@
            path: /var/www/html/landing/storage
            mode: 0777
            recurse: yes
-
-     ![5](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no3\no3\5.PNG)
+     ```
+     ![5](https://user-images.githubusercontent.com/92453574/144301610-baf33b28-891c-4cb1-80b3-201720f39f35.PNG)
 
      
 
    - instalasi
-
-     `ansible-playbook -y hosts nginxphp.yml -k`
-
-     ![6](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no3\no3\6.PNG)
+     ```
+     ansible-playbook -y hosts nginxphp.yml -k
+     ```
+     ![6](https://user-images.githubusercontent.com/92453574/144301617-397e7e75-4dbf-4643-b3cb-dc7b054f176f.PNG)
 
      
 
    - mengatur lxc_landing.dev
-
+     ```
      server {
              listen 80;
 
@@ -344,16 +342,14 @@
                      fastcgi_param SCRIPTFILENAME $document_root$fastcgi_script_name;
              }
      }
-
-     ![7](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no3\no3\7.PNG)
+     ```
+     ![7](https://user-images.githubusercontent.com/92453574/144301619-392f4032-adee-4184-b6ce-3a8f0010aadc.PNG)
 
      
 
    - buat folder config.yml
-
-   - 
-
-   - ---
+     ```
+     ---
      - hosts: all
        become : yes
        vars:
@@ -396,23 +392,21 @@
           command: curl -i http://lxc_landing.dev
           args:
            warn: false
-
-     ![8](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no3\no3\8.PNG)
+      ```
+     ![8](https://user-images.githubusercontent.com/92453574/144301621-5a158924-17ea-4e9b-b898-0621eee13f2a.PNG)
 
      
 
    - instalasi
-
+     ```
      ansible-playbook -y hosts config.yml -k
-
-     ![9](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no3\no3\9.PNG)
+     ```
+     ![9](https://user-images.githubusercontent.com/92453574/144301625-032d7707-4521-4fbe-bee9-5436d92d3b10.PNG)
 
      
 
-   - buka vm.local untuj mengecek keberhasilan instalasi
-
-     ![10](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no3\no3\10.PNG)
-
+   - buka vm.local untuk mengecek keberhasilan instalasi
+     ![10](https://user-images.githubusercontent.com/92453574/144301628-f2397346-e741-4498-a1c6-0e536cbd2d3a.PNG)
      berhasil
 
 
@@ -420,27 +414,27 @@
 4. **vm.local/blog**
 
    - masuk ansible untuk install laravel
-
+     ```
      cd ~/ansible/
      mkdir wordoress/
      cd wordpress/
-
-     ![1](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no4\no4\1.PNG)
+     ```
+     ![1](https://user-images.githubusercontent.com/92453574/144302776-0da1206a-124c-48cd-a4e9-37780b5c53e0.PNG)
 
      
 
    - membuat host untuk lxc
-
+     ```
      nano host
 
      ubuntu_php7.4 ansible_host=lxc_php7.dev ansible_ssh_user=root ansible_become_pass=1234
-
-     ![2](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no4\no4\2.PNG)
+     ```
+     ![2](https://user-images.githubusercontent.com/92453574/144302781-2381b6ea-d4b9-4984-bcbb-6960732ad7f7.PNG)
 
      
 
    - buat direktori untuk tasks
-
+     ```
      ---
      - hosts: all
        vars:
@@ -533,13 +527,13 @@
           become_user: root
           become_method: su
           action: service name=nginx state=restarted
-
-     ![3](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no4\no4\3.PNG)
+     ```
+     ![3](https://user-images.githubusercontent.com/92453574/144302782-bac5773b-ccd6-44e1-91a5-6991188695f7.PNG)
 
      
 
    - masuk pada template wp.conf
-
+     ```
      <?php
      /**
       * The base configuration for WordPress
@@ -639,13 +633,13 @@
 
      /** Sets up WordPress vars and included files. */
      require_once ABSPATH . 'wp-settings.php';
-
-     ![4](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no4\no4\4.PNG)
+     ```
+     ![4](https://user-images.githubusercontent.com/92453574/144302790-1a92a4a7-bf22-48de-b775-d58d7fe6304e.PNG)
 
      
 
    - masuk template wordpress.conf
-
+     ```
      server {
           listen 80;
           listen [::]:80;
@@ -675,34 +669,27 @@
                   include fastcgi_params;
           }
      }
-
-     ![5](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no4\no4\5.PNG)
-
+     ```
+     ![5](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no4\no4\5.PNG)![5](https://user-images.githubusercontent.com/92453574/144302793-a10d3f6c-0ba2-4105-ba12-67d2086d0326.PNG)
      
 
    - jalankan ansible untuk menginstall
-
+     ```
      sudo ansible-playbook -i hosts install-wp.yml -k
-
-     ![6](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no4\no4\6.PNG)
+     ```
+     ![6](https://user-images.githubusercontent.com/92453574/144302797-885ea735-5f9a-4efe-9fe3-3e4ed19d2478.PNG)
 
      
 
    - buka vm.local/blog/ untuk mengecek
 
-     ![7](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no4\no4\7.png)
+     ![7](https://user-images.githubusercontent.com/92453574/144302800-50e62624-f122-40c3-b467-5ccdb56093f2.png)
 
-   - 
+     ![8](https://user-images.githubusercontent.com/92453574/144302805-0e638f38-7092-4150-8b18-2999506fcd61.png)
 
-     ![8](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no4\no4\8.png)
+     ![9](https://user-images.githubusercontent.com/92453574/144302809-985b5359-bb0f-4af6-8f95-779170e4f242.png)
 
-     
-
-     ![9](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no4\no4\9.png)
-
-     
-
-     ![10](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no4\no4\10.png)
+     ![10](https://user-images.githubusercontent.com/92453574/144302813-9d02b716-06e9-4925-bc6e-cada22795d76.png)
 
      berhasil
 
