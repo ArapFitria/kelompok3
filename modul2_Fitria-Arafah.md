@@ -175,7 +175,6 @@
      cd ~/ansible/
      mkdir laravel
      cd laravel/
-     nano host
      ```
      ![1](https://user-images.githubusercontent.com/92453574/144301593-f18e2bda-d425-4e6a-b85f-65acfafd075e.PNG)
 
@@ -183,7 +182,7 @@
 
    - membuat host untuk lxc
      ```
-     nano host
+     nano hosts
 
      ubuntu_landing ansible_host=lxc_landing.dev ansible_ssh_user=root ansible_become_pass=1234
      ```
@@ -670,7 +669,7 @@
           }
      }
      ```
-     ![5](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no4\no4\5.PNG)![5](https://user-images.githubusercontent.com/92453574/144302793-a10d3f6c-0ba2-4105-ba12-67d2086d0326.PNG)
+     ![5](https://user-images.githubusercontent.com/92453574/144302793-a10d3f6c-0ba2-4105-ba12-67d2086d0326.PNG)
      
 
    - jalankan ansible untuk menginstall
