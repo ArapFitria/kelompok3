@@ -8,78 +8,78 @@
 1. **Rubah LXC landing dengan ubuntu focal (destroy n create, same ip, same name)**
 
    - menghapus container ubuntu_landing sebelum membuat container baru dengan nama yang sama 
-
      ```
      lxc-destroy ubuntu_landing
      ```
-
      ![1](https://user-images.githubusercontent.com/92453574/144299793-22ddbd42-a752-4268-b40b-23cd31f9c8d7.PNG)
 
      
 
    - buat container lxc ubuntu versi focal baru 
-
-     `lxc-create -n ubuntu_landing -t download -- --dist ubuntu --release focal --arch amd64 --force-cache --no-validate --server images.linuxcontainers.org`
-
-     ![2](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no1\no1\2.PNG)
+     ```
+     lxc-create -n ubuntu_landing -t download -- --dist ubuntu --release focal --arch amd64 --force-cache --no-validate --server images.linuxcontainers.org
+     ```
+     ![2](https://user-images.githubusercontent.com/92453574/144299802-f10d438b-f41a-42cd-8f01-eeb676754808.PNG)
 
      
 
-     `lxc-start -n ubuntu_landing`
-
-     `lxc-attach -n ubuntu_landing`
-
-     ![3](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no1\no1\3.PNG)
+     ```
+     lxc-start -n ubuntu_landing
+     
+     lxc-attach -n ubuntu_landing
+     ```
+     ![3](https://user-images.githubusercontent.com/92453574/144299805-3cb0e406-65d4-4b6f-9fd2-05cb1fcf0b60.PNG)
 
      
 
    - konfigurasi IP static di dalam nano
-
-     `nano /etc/netplan/00-installer-config.yaml`
-
-     ![4](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no1\no1\4.PNG)
+     ```
+     nano /etc/netplan/00-installer-config.yaml
+     ```
+     ![4](https://user-images.githubusercontent.com/92453574/144299807-4d3625e1-48d4-4b92-930f-b2863a3ecb25.PNG)
 
      
 
-     `netplan apply`
-
-     ![5](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no1\no1\5.PNG)
-
-     ![6](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no1\no1\6.PNG)
+     ```
+     netplan apply
+     ```
+     ![5](https://user-images.githubusercontent.com/92453574/144299808-cc2fbc0e-cf7e-4863-b4ea-1bed6a731e6d.PNG)
+     ![6](https://user-images.githubusercontent.com/92453574/144299813-bb286b3c-745d-4a57-82f6-86075067581c.PNG)
 
      
 
    - kemudian install open ssh server 
-
-     `apt-get install openssh-server -y`
-
-     ![7](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no1\no1\7.PNG)
+     ```
+     apt-get install openssh-server -y
+     ```
+     ![7](https://user-images.githubusercontent.com/92453574/144299818-73d1a254-5279-4502-8c23-d3fb80390a17.PNG)
 
      
    
    - lalu lakukan konfigurasi ssh
-   
-     `nano /etc/ssh/sshd_config`
-   
-     ![8](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no1\no1\8.PNG)
+     ```
+     nano /etc/ssh/sshd_config
+     ```
+     ![8](https://user-images.githubusercontent.com/92453574/144299822-7b5d916f-222c-40fb-a064-fffcb377d6cb.PNG)
      
      
      
    - buat password baru
+     ```
+     service sshd restart
    
-     `service sshd restart`
-   
-     `passwd`
-     
-     ![9](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no1\no1\9.PNG)
+     passwd
+     ```
+     ![9](https://user-images.githubusercontent.com/92453574/144299824-67afcd67-710a-4acf-a47d-9b528582b324.PNG)
      
      
      
    - cek ssh 
+     ```
+     ssh root@10.0.3.103
+     ```
    
-     `ssh root@10.0.3.103`
-   
-     ![10](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no1\no1\10.PNG)
+     ![10](https://user-images.githubusercontent.com/92453574/144299827-8eaab05a-75be-477f-8004-217886bf5548.PNG)
      
      
 
