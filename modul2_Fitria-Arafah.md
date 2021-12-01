@@ -1,13 +1,17 @@
-Laporan Praktikum 3
+**Laporan Modul 2**
 
 - Annisa Aulia Arafah (1202190038)
 - Fitria Rahma Wulandari (1202190045)
+
+---
 
 1. **Rubah LXC landing dengan ubuntu focal (destroy n create, same ip, same name)**
 
    - menghapus container ubuntu_landing sebelum membuat container baru dengan nama yang sama 
 
-     `lxc-destroy ubuntu_landing`
+     ```
+     lxc-destroy ubuntu_landing
+     ```
 
      ![](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\no1\no1\1.PNG)
 
