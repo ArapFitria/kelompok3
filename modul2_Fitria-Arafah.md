@@ -709,19 +709,19 @@
      nano lxc_landing.dev
      ```
 
-   ![1](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\1\1.PNG)
+    ![1](https://user-images.githubusercontent.com/92453574/144454260-0268c6ab-f8f9-4176-89b1-57637a28e1b3.PNG)
 
    
 
    - akan tertampil seperti dibawah ini
 
-     ![2 sebelum](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\1\2 sebelum.PNG)
+     ![2 sebelum](https://user-images.githubusercontent.com/92453574/144454266-874e97d1-d13c-49f7-9367-8e61778d9f3a.PNG)
 
      
 
    - kemudian rubah menjadi seperti gambar di bawah
 
-     ![2 sesudah](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\1\2 sesudah.PNG)
+     ![2 sesudah](https://user-images.githubusercontent.com/92453574/144454268-ca06dc8c-579c-44aa-801a-e698c6d010df.PNG)
 
      
 
@@ -731,7 +731,7 @@
      nano tambahan.yml
      ```
 
-     ![3](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\1\3.PNG)
+     ![3](https://user-images.githubusercontent.com/92453574/144454272-f729e4a7-a77a-45ac-86ae-bd98ba089344.PNG)
 
      
 
@@ -770,15 +770,14 @@
            warn: false
      ```
 
-     ![4](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\1\4.PNG)
-
-     ![5](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\1\5.PNG)
+     ![4](https://user-images.githubusercontent.com/92453574/144454275-8616d722-c706-4fad-bd27-15c44609cd8e.PNG)
+     ![5](https://user-images.githubusercontent.com/92453574/144454276-051793f1-3ba1-4322-bdca-9d98dbc61b11.PNG)
 
      
 
    - buka vm.local untuk mengecek apakah berhasil.
 
-     ![6](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\1\6.PNG)
+     ![6](https://user-images.githubusercontent.com/92453574/144454280-1c81ba96-6679-49be-a7a7-12ed236446f3.PNG)
 
    - berhasil
 
@@ -795,19 +794,19 @@
      nano wordpress.conf
      ```
 
-     ![1](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\2\1.PNG)
+     ![1](https://user-images.githubusercontent.com/92453574/144454321-5a9855df-ca3f-4fe2-b0b8-e8ae7f056832.PNG)
 
      
 
    - akan tertampil seperti dibawah ini
 
-     ![2 sebelum](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\2\2 sebelum.PNG)
+     ![2 sebelum](https://user-images.githubusercontent.com/92453574/144454324-5234b081-781a-47aa-9ce5-30c6cc711bbf.PNG)
 
      
 
    - kemudian ubah menjadi seperti di bawah ini
 
-     ![2 sesudah](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\2\2 sesudah.PNG)
+     ![2 sesudah](https://user-images.githubusercontent.com/92453574/144454326-574058ef-2528-4226-bdd3-651c3a95a1d8.PNG)
 
      
 
@@ -817,7 +816,7 @@
      nano tambahan.yml
      ```
 
-     ![3](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\2\3.PNG)
+     ![3](https://user-images.githubusercontent.com/92453574/144454329-829ab04f-284e-47f8-8005-72e9201bcaa9.PNG)
 
      
 
@@ -856,55 +855,17 @@
            warn: false
      ```
 
-     ![4](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\2\4.PNG)
+     ![4](https://user-images.githubusercontent.com/92453574/144454333-f5781906-e330-4880-a0b8-b85cee85da88.PNG)
 
-     ![5](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\2\5.PNG)
+     ![5](https://user-images.githubusercontent.com/92453574/144454337-8c341508-c2a4-4052-afba-250a0a616143.PNG)
 
      
 
    - buka vm.local/blog untuk mengecek apakah berhasil
 
-     ![6](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\2\6.PNG)
+     ![6](https://user-images.githubusercontent.com/92453574/144454342-e37f8022-b5b6-48f4-a60f-08cbba37f956.PNG)
 
    - berhasil
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
