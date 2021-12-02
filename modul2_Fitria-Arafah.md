@@ -693,6 +693,220 @@
      berhasil
 
 
+---
+4. - 
+
+---
+
+**Soal Tambahan**
+
+1. Laravel
+
+   - masuk pada konfigurasi file lxc_landing
+
+     ```
+     cd ~/ansible/laravel/
+     nano lxc_landing.dev
+     ```
+
+   ![1](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\1\1.PNG)
+
+   
+
+   - akan tertampil seperti dibawah ini
+
+     ![2 sebelum](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\1\2 sebelum.PNG)
+
+     
+
+   - kemudian rubah menjadi seperti gambar di bawah
+
+     ![2 sesudah](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\1\2 sesudah.PNG)
+
+     
+
+   - buat ansible dengan nama "tambahan.yml"
+
+     ```
+     nano tambahan.yml
+     ```
+
+     ![3](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\1\3.PNG)
+
+     
+
+   - jalankan ansible "tambahan.yml"
+
+     ```
+     ---
+     - hosts: all
+       become : yes
+       tasks:
+        - name: mengganti php sock
+          lineinfile:
+           path: /etc/php/7.4/fpm/pool.d/www.conf
+           regexp: '^(.*)listen =(.*)$'
+           line: 'listen = 127.0.0.1:9001'
+           backrefs: yes
+        - name: copy the nginx config file 
+          copy:
+           src: ~/ansible/laravel/lxc_landing.dev
+           dest: /etc/nginx/sites-available/lxc_landing.dev
+        - name: Symlink lxc_landing.dev
+          command: ln -sfn /etc/nginx/sites-available/lxc_landing.dev /etc/nginx/sites-enabled/lxc_landing.dev
+          args:
+           warn: false
+        - name: restart nginx
+          service:
+           name: nginx
+           state: restarted
+        - name: restart php7
+          service:
+           name: php7.4-fpm
+           state: restarted
+        - name: curl web
+          command: curl -i http://lxc_landing.dev
+          args:
+           warn: false
+     ```
+
+     ![4](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\1\4.PNG)
+
+     ![5](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\1\5.PNG)
+
+     
+
+   - buka vm.local untuk mengecek apakah berhasil.
+
+     ![6](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\1\6.PNG)
+
+   - berhasil
+
+     
+
+   
+
+2. Wordpress
+
+   - masuk pada konfigurasi file wordpress.conf
+
+     ```
+     cd wordpress/
+     nano wordpress.conf
+     ```
+
+     ![1](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\2\1.PNG)
+
+     
+
+   - akan tertampil seperti dibawah ini
+
+     ![2 sebelum](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\2\2 sebelum.PNG)
+
+     
+
+   - kemudian ubah menjadi seperti di bawah ini
+
+     ![2 sesudah](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\2\2 sesudah.PNG)
+
+     
+
+   - buat ansible dengan nama "tambahan.yml"
+
+     ```
+     nano tambahan.yml
+     ```
+
+     ![3](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\2\3.PNG)
+
+     
+
+   - jalankan ansible "tambahan.yml"
+
+     ```
+     ---
+     - hosts: all
+       become : yes
+       tasks:
+        - name: mengganti php sock
+          lineinfile:
+           path: /etc/php/7.4/fpm/pool.d/www.conf
+           regexp: '^(.*)listen =(.*)$'
+           line: 'listen = 127.0.0.1:9001'
+           backrefs: yes
+        - name: copy the nginx config file 
+          copy:
+           src: ~/ansible/wordpress/wordpress.conf
+           dest: /etc/nginx/sites-available/lxc_php7.dev
+        - name: Symlink lxc_php7.dev
+          command: ln -sfn /etc/nginx/sites-available/lxc_php7.dev /etc/nginx/sites-enabled/lxc_php7.dev
+          args:
+           warn: false
+        - name: restart nginx
+          service:
+           name: nginx
+           state: restarted
+        - name: restart php7
+          service:
+           name: php7.4-fpm
+           state: restarted
+        - name: curl web
+          command: curl -i http://lxc_php7.dev
+          args:
+           warn: false
+     ```
+
+     ![4](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\2\4.PNG)
+
+     ![5](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\2\5.PNG)
+
+     
+
+   - buka vm.local/blog untuk mengecek apakah berhasil
+
+     ![6](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 2\tambahan\tambahan\2\6.PNG)
+
+   - berhasil
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
