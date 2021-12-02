@@ -412,7 +412,7 @@
 
 4. **vm.local/blog**
 
-   - masuk ansible untuk install laravel
+   - masuk ansible untuk install wordpress
      ```
      cd ~/ansible/
      mkdir wordoress/
