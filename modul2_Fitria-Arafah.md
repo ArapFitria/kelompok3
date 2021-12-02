@@ -24,9 +24,8 @@
      
 
      ```
-     lxc-start -n ubuntu_landing
-     
-     lxc-attach -n ubuntu_landing
+     lxc-start ubuntu_landing
+     lxc-attach ubuntu_landing
      ```
      ![3](https://user-images.githubusercontent.com/92453574/144299805-3cb0e406-65d4-4b6f-9fd2-05cb1fcf0b60.PNG)
 
@@ -67,7 +66,6 @@
    - buat password baru
      ```
      service sshd restart
-   
      passwd
      ```
      ![9](https://user-images.githubusercontent.com/92453574/144299824-67afcd67-710a-4acf-a47d-9b528582b324.PNG)
@@ -99,17 +97,15 @@
    - buat container lxc ubuntu versi focal 
 
      ```
-     sudo lxc-create -n ubuntu_php7.4 -t download -- --dist ubuntu --release focal --arch amd64 --force-cache --no-validate --server images.linuxcontainers.org
+     lxc-create -n ubuntu_php7.4 -t download -- --dist ubuntu --release focal --arch amd64 --force-cache --no-validate --server images.linuxcontainers.org
      ```
      ![2](https://user-images.githubusercontent.com/92453574/144300838-a0bb2818-9fec-4b31-964c-30ddecfc000e.PNG)
 
      
 
      ```
-     lxc-start -n ubuntu_php7.4
-
-     lxc-attach -n ubuntu_php7.4
-
+     lxc-start ubuntu_php7.4
+     lxc-attach ubuntu_php7.4
      apt-get install nano net-tools curl
      ```
      ![3](https://user-images.githubusercontent.com/92453574/144300843-1f50b602-b87a-467e-aacd-c8980f20d317.PNG)
@@ -134,6 +130,8 @@
 
    - kemudian install open ssh server 
      ```
+     lxc-start ubuntu_php7.4
+     lxc-attach ubuntu_php7.4
      apt-get install openssh-server -y
      ```
      ![7](https://user-images.githubusercontent.com/92453574/144300866-0138797e-b29a-42e6-8c05-0c1f6df94f55.PNG)
@@ -151,7 +149,6 @@
     - buat password baru
       ```
       service sshd restart
-    
       passwd
       ```
       ![9](https://user-images.githubusercontent.com/92453574/144300874-127b83e1-4812-4249-bdbb-79244b9a2ea6.PNG)
@@ -173,7 +170,7 @@
    - masuk ansible untuk install laravel
      ```
      cd ~/ansible/
-     mkdir laravel
+     mkdir laravel/
      cd laravel/
      ```
      ![1](https://user-images.githubusercontent.com/92453574/144301593-f18e2bda-d425-4e6a-b85f-65acfafd075e.PNG)
@@ -183,7 +180,6 @@
    - membuat hosts untuk lxc
      ```
      nano hosts
-
      ubuntu_landing ansible_host=lxc_landing.dev ansible_ssh_user=root ansible_become_pass=1234
      ```
      ![2](https://user-images.githubusercontent.com/92453574/144301601-a5f9234b-dceb-48dc-9c88-48da68c759e5.PNG)
@@ -287,8 +283,8 @@
           loop:
            - { regexp: '^(.*)DB_HOST(.*)$', line: 'DB_HOST=10.0.3.200' }
            - { regexp: '^(.*)DB_DATABASE(.*)$', line: 'DB_DATABASE=landing' }
-           - { regexp: '^(.*)DB_USERNAME(.*)$', line: 'DB_USERNAME=admin' }
-           - { regexp: '^(.*)DB_PASSWORD(.*)$', line: 'DB_PASSWORD= ' }
+           - { regexp: '^(.*)DB_USERNAME(.*)$', line: 'DB_USERNAME=arafah' }
+           - { regexp: '^(.*)DB_PASSWORD(.*)$', line: 'DB_PASSWORD=1234 ' }
            - { regexp: '^(.*)APP_URL(.*)$', line: 'APP_URL=http://vm.local' }
            - { regexp: '^(.*)APP_NAME=(.*)$', line: 'APP_NAME=landing' }
         - name: Composer install ke landing
@@ -313,7 +309,7 @@
 
    - instalasi
      ```
-     ansible-playbook -y hosts nginxphp.yml -k
+     ansible-playbook -y hosts installcomposer.yml -k
      ```
      ![6](https://user-images.githubusercontent.com/92453574/144301617-397e7e75-4dbf-4643-b3cb-dc7b054f176f.PNG)
 
@@ -425,7 +421,6 @@
    - membuat hosts untuk lxc
      ```
      nano hosts
-
      ubuntu_php7.4 ansible_host=lxc_php7.dev ansible_ssh_user=root ansible_become_pass=1234
      ```
      ![2](https://user-images.githubusercontent.com/92453574/144302781-2381b6ea-d4b9-4984-bcbb-6960732ad7f7.PNG)
@@ -674,7 +669,7 @@
 
    - jalankan ansible untuk menginstall
      ```
-     sudo ansible-playbook -i hosts install-wp.yml -k
+     ansible-playbook -i hosts installwordpress.yml -k
      ```
      ![6](https://user-images.githubusercontent.com/92453574/144302797-885ea735-5f9a-4efe-9fe3-3e4ed19d2478.PNG)
 
