@@ -180,7 +180,7 @@
 
      
 
-   - membuat host untuk lxc
+   - membuat hosts untuk lxc
      ```
      nano hosts
 
@@ -422,9 +422,9 @@
 
      
 
-   - membuat host untuk lxc
+   - membuat hosts untuk lxc
      ```
-     nano host
+     nano hosts
 
      ubuntu_php7.4 ansible_host=lxc_php7.dev ansible_ssh_user=root ansible_become_pass=1234
      ```
