@@ -1,12 +1,13 @@
 ### Praktikum Modul 3
 
-Annisa Aulia Arafah       (1202190038)
+Annisa Aulia Arafah    (1202190038)
 
 Fitria Rahma Wulandari (1202190045)
 
 ---
 
 1. Create a subdomain dev.vm.local using ansible with some rules:
+
    i. Using ansible
 
    ii. using the same lxc used with vm.local
@@ -23,7 +24,7 @@ Fitria Rahma Wulandari (1202190045)
   cd ~/ansible/laravel/
   ```
 
-  ![1](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 3\prak3\prak3\1.PNG)
+  ![1](https://user-images.githubusercontent.com/92453574/146378288-8e2b8f69-c7fd-4be5-8858-6220afe467b4.PNG)
 
   
 
@@ -39,13 +40,13 @@ Fitria Rahma Wulandari (1202190045)
            - dnsutils
   ```
 
-  ![2](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 3\prak3\prak3\2.PNG)
+  ![2](https://user-images.githubusercontent.com/92453574/146378301-87660a93-79a5-4368-b270-de2666348afd.PNG)
 
   
 
 - install packages
 
-  ![3](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 3\prak3\prak3\3.PNG)
+  ![3](https://user-images.githubusercontent.com/92453574/146378308-31087fa5-6153-43a8-8b02-603207ebc0b7.PNG)
 
 
 
@@ -103,7 +104,7 @@ Fitria Rahma Wulandari (1202190045)
        action: service name=bind9 state=restarted
   ```
 
-  ![4](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 3\prak3\prak3\4.PNG)
+  ![4](https://user-images.githubusercontent.com/92453574/146378313-06e3c534-c62d-4193-8c88-e01232e11171.PNG)
 
   
 
@@ -161,37 +162,37 @@ Fitria Rahma Wulandari (1202190045)
        action: service name=bind9 state=restarted
   ```
 
-  ![5](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 3\prak3\prak3\5.PNG)
+  ![5](https://user-images.githubusercontent.com/92453574/146378329-46c7ee8d-7443-4ff4-95eb-b7f433c42b8a.PNG)
 
   
 
 - Add subdomain to /etc/hosts
 
-  ![6](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 3\prak3\prak3\6.PNG)
+  ![6](https://user-images.githubusercontent.com/92453574/146378334-f461583a-6fb9-459a-882f-97770a2836e9.PNG)
 
 
 
 - Open vm.local
 
-  ![7](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 3\prak3\prak3\7.PNG)
+  ![7](https://user-images.githubusercontent.com/92453574/146378340-117b34df-f387-4a90-be85-fcc36653cd40.PNG)
 
 
 
 - Add line www
 
-  ![8](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 3\prak3\prak3\8.PNG)
+  ![8](https://user-images.githubusercontent.com/92453574/146378347-88157153-31b2-455e-a98c-c7585211fb14.PNG)
 
 
 
 - Exit lxc. then open and edit in vm.local
 
-  ![9](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 3\prak3\prak3\9.PNG)
+  ![9](https://user-images.githubusercontent.com/92453574/146378349-a9a72b0a-60b3-48ed-8fa4-c1acf9e4d9f1.PNG)
 
 
 
 - Open and edit /etc/bind/vm/vm.local
 
-  ![10](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 3\prak3\prak3\10.PNG)
+  ![10](https://user-images.githubusercontent.com/92453574/146378356-61194ec6-6db1-4e69-8d0f-4c0010e3b529.PNG)
 
 
 
@@ -203,19 +204,19 @@ Fitria Rahma Wulandari (1202190045)
   /etc/init.d/named restart
   ```
 
-  ![11](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 3\prak3\prak3\11.PNG)
+  ![11](https://user-images.githubusercontent.com/92453574/146378365-a2c0376b-1fd7-418f-acef-1be45715e18f.PNG)
 
 
 
 - Open wifi setting. in menu IPv4, add DNS Server and uncheck automatic
 
-  ![12](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 3\prak3\prak3\12.PNG)
+  ![12](https://user-images.githubusercontent.com/92453574/146378371-a9a30336-c7c5-4b42-a1a2-60032c8039f5.PNG)
 
 
 
 - Reconnecting the wifi, and open vm.local on browser
 
-  ![13](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 3\prak3\prak3\13.PNG)
+  ![13](https://user-images.githubusercontent.com/92453574/146378376-a652994e-8839-46ec-88a1-88717bafc1cd.PNG)
 
 
 
