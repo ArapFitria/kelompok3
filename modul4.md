@@ -144,27 +144,29 @@ Fitria Rahma Wulandari (1202190045)
 
 - Run the jmeter. Change the number from 50,100, 150
 
-  ![23](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\23.PNG)
+  ![23](https://user-images.githubusercontent.com/92453574/148266058-08ebd465-6b73-405c-b32e-884cf3f37999.png)
 
-  ![24](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\24.PNG)
+  ![24](https://user-images.githubusercontent.com/92453574/148266063-a629ddcb-b9b8-4794-aef2-d2ee161c18fb.png)
 
-  ![25](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\25.PNG)
+  ![25](https://user-images.githubusercontent.com/92453574/148266064-3108f728-c1e8-4bce-ab91-45ebe3f53b32.png)
 
-  ![26](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\26.PNG)
+  ![26](https://user-images.githubusercontent.com/92453574/148266067-3c5efdf5-aa06-4d22-8e7a-36a2294b40cb.png)
 
-  ![27](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\27.PNG)
+  ![27](https://user-images.githubusercontent.com/92453574/148266071-00fba6b7-abcc-4605-b3ed-511f6d053efc.png)
 
-  ![28](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\28.PNG)
+  ![28](https://user-images.githubusercontent.com/92453574/148266074-1871a9f3-1af4-4d93-9d82-929c149795a8.png)
 
-  ![29](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\29.PNG)
+  ![29](https://user-images.githubusercontent.com/92453574/148266076-054a71e3-8871-428c-9237-8b1d01f652c6.png)
 
   ![30](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\30.PNG)![31](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\31.PNG)
 
-  ![32](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\32.PNG)
+  ![31](https://user-images.githubusercontent.com/92453574/148266080-a099b597-281e-4f9f-a9ba-8b35b93e0715.png)
+  
+  ![32](https://user-images.githubusercontent.com/92453574/148266082-069c8023-f7b5-4cd2-b471-364863a68ab9.png)
 
-  ![33](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\33.PNG)
+  ![33](https://user-images.githubusercontent.com/92453574/148266084-0fd3b98b-e315-4ce5-85d1-fe4626167994.png)
 
-  ![34](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\34.PNG)
+  ![34](https://user-images.githubusercontent.com/92453574/148266086-fd4e92e7-7003-4c25-bfa7-e56561a6f75a.png)
 
   
 
@@ -178,35 +180,35 @@ Fitria Rahma Wulandari (1202190045)
 
 - Add upstream landing, php5, and php7
 
-  ![35](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\35.PNG)
+  ![35](https://user-images.githubusercontent.com/92453574/148266090-e27e64b6-9867-4b05-bae5-623f2092d1ec.PNG)
 
   
 
 - Go back to jmeter and redo
 
-  ![36](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\36.PNG)
+  ![36](https://user-images.githubusercontent.com/92453574/148266091-da0ec16e-a9da-4ae9-a6f5-b6772d968936.png)
 
-  ![37](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\37.PNG)
+  ![37](https://user-images.githubusercontent.com/92453574/148266098-dee00661-12b6-43c9-a4c6-aa3b3f4977f1.png)
 
-  ![38](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\38.PNG)
+  ![38](https://user-images.githubusercontent.com/92453574/148266100-29947b49-bbad-47b6-9450-1cbb56e3a56f.png)
 
-  ![39](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\39.PNG)
+  ![39](https://user-images.githubusercontent.com/92453574/148266103-5e5331a5-1c41-4eaf-bb70-38705cf8a98f.png)
 
-  ![40](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\40.PNG)
+  ![40](https://user-images.githubusercontent.com/92453574/148266105-fd658891-4807-4b05-b149-c875d123c279.png)
 
-  ![41](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\41.PNG)
+  ![41](https://user-images.githubusercontent.com/92453574/148266112-11518da3-bc7b-4d56-b59a-b906770e3ff8.png)
 
-  ![42](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\42.PNG)
+  ![42](https://user-images.githubusercontent.com/92453574/148266117-f6861925-f66d-45b9-8cd8-696232ebff0e.png)
 
-  ![43](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\43.PNG)
+  ![43](https://user-images.githubusercontent.com/92453574/148266120-d040db1b-5baf-438f-802f-ea87c4c0952e.png)
 
-  ![44](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\44.PNG)
+  ![44](https://user-images.githubusercontent.com/92453574/148266125-02eff9bc-9810-40d2-b08d-22c7892f032e.png)
 
-  ![45](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\45.PNG)
+  ![45](https://user-images.githubusercontent.com/92453574/148266127-5a73d8cc-5664-4bdf-aea9-51890b0740b7.png)
 
-  ![46](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\46.PNG)
+  ![46](https://user-images.githubusercontent.com/92453574/148266134-fb6251fb-cc42-4ed7-aef2-16ec44276a0e.png)
 
-  ![47](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\47.PNG)
+  ![47](https://user-images.githubusercontent.com/92453574/148266138-7d44c886-26e3-4c53-9fb3-ba529c9f19c8.png)
 
   
 
