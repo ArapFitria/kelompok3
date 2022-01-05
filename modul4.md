@@ -85,61 +85,60 @@ Fitria Rahma Wulandari (1202190045)
 
 - xx
 
-  ![13](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\13.PNG)
+  ![13](https://user-images.githubusercontent.com/92453574/148256810-6cae00d2-ea9b-4caf-9242-d71ec1ee2fbf.PNG)
 
   
 
 - xx
 
-  ![14](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\14.PNG)
+  ![14](https://user-images.githubusercontent.com/92453574/148256822-77a227de-0164-4d5e-908f-b5651a668afe.PNG)
+  
+
+- x
+
+  ![15](https://user-images.githubusercontent.com/92453574/148256825-10a0e105-bf04-4ee2-8026-ab67388d45dc.PNG)
 
   
 
 - x
 
-  ![15](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\15.PNG)
+  ![16](https://user-images.githubusercontent.com/92453574/148256828-52569a85-0e0a-43ae-9e14-bce121e627d8.PNG)
 
   
 
 - x
 
-  ![16](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\16.PNG)
-
-  
-
-- x
-
-  ![17](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\17.PNG)
+  ![17](https://user-images.githubusercontent.com/92453574/148256833-4af698d8-996b-4fd1-b6ed-116dbab2cd5c.PNG)
 
   
 
 - s
 
-  ![18](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\18.PNG)
+  ![18](https://user-images.githubusercontent.com/92453574/148256837-e85f69e8-e415-4906-a562-1e26f0ed93c5.PNG)
 
   
 
 - s
 
-  ![19](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\19.PNG)
+  ![19](https://user-images.githubusercontent.com/92453574/148256846-284c1f4c-3f91-4484-80e8-94212fb98aef.PNG)
 
   
 
 - s
 
-  ![20](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\20.PNG)
+  ![20](https://user-images.githubusercontent.com/92453574/148256850-733dae1e-3e21-419e-9d77-232cf2968a5a.PNG)
 
   
 
 - x
 
-  ![21](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\21.PNG)
+  ![21](https://user-images.githubusercontent.com/92453574/148256855-5ae882e0-e81d-4c4f-ae3f-6a03db1fe894.PNG)
 
   
 
 - xx
 
-  ![22](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\22.PNG)
+  ![22](https://user-images.githubusercontent.com/92453574/148256866-cd4aaf10-5ff2-460b-9e51-13c4d9798aa9.PNG)
 
   
 
