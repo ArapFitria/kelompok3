@@ -7,74 +7,79 @@ Fitria Rahma Wulandari (1202190045)
 ---
 
 1. Apply loadbalancer for /blog and /app with conditions
+   
    i. /blog using least_conn
+  
    ii. /app uses ip hash
+   
    iii. it is recommended to use ansible for installation
+   
 2. Use apache Jmeter to analyze the difference between /, /app, /blog with loadbalancer and without loadbalancer on traffic of 50, 100 and 150 users. Analysis in terms of time only. Write testing and analysis steps in your own language.
 
 ---
 
 - For each container, make 2 copies 
 
-  ![1](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\1.PNG)
+  ![1](https://user-images.githubusercontent.com/92453574/148256371-b51204b9-7971-4edb-8ab8-dbe6c0223c64.PNG)
 
   
 
 - Start each container
 
-  ![2](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\2.PNG)
+  ![2](https://user-images.githubusercontent.com/92453574/148256379-4f6de51e-b8e0-43ed-93e1-86dbcbd78b00.PNG)
 
   
 
 - Change the IP address to 10.0.3.111 in ubuntu_php7.4_2 and change IP Address to 10.0.3.123 in ubuntu_php7.4_3
 
-  ![3](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\3.PNG)
+  ![3](https://user-images.githubusercontent.com/92453574/148256383-4ed9f83c-0fd2-4235-a3d9-1739226f733e.PNG)
 
   
 
 - Go to etc/hosts to register lxc_php7_2.dev
 
-  ![5](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\5.PNG)
+  ![5](https://user-images.githubusercontent.com/92453574/148256391-1554aac7-2abd-47ab-a30b-8d7e6ddf69f4.PNG)
 
   
 
 - Change the server name
 
-  ![6](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\6.PNG)
+  ![6](https://user-images.githubusercontent.com/92453574/148256397-fa168430-5032-47b6-a671-f739e4d6aebd.PNG)
 
   
 
 - Restart nginx and make curl. then start all container
 
-  ![7](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\7.PNG)
+  ![7](https://user-images.githubusercontent.com/92453574/148256400-9df0671d-a2a4-4c2b-8719-622fed31ced4.PNG)
 
 - xx
 
-  ![8](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\8.PNG)
+  ![8](https://user-images.githubusercontent.com/92453574/148256403-b388e3a0-9ae9-420e-a865-d1c2f473dd5e.PNG)
 
   
 
 - xx
 
-  ![9](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\9.PNG)
+  ![9](https://user-images.githubusercontent.com/92453574/148256409-95b80c9a-1a20-4d16-82b3-9a5c59382c6f.PNG)
 
   
 
 - xx
 
-  ![10](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\10.PNG)
+  ![10](https://user-images.githubusercontent.com/92453574/148256412-6d256292-a0d7-44a3-bf4c-fc175755819e.PNG)
 
   
 
 - xx
 
-  ![9](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\11.PNG)
+  ![11](https://user-images.githubusercontent.com/92453574/148256415-c00fb359-ac6d-4042-a509-3e4156855f83.PNG)
+
 
   
 
 - xx
 
-  ![12](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\12.PNG)
+  ![12](https://user-images.githubusercontent.com/92453574/148256359-e59c1ebe-169b-49ba-8016-e17a749a383a.PNG)
 
   
 
