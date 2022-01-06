@@ -30,7 +30,7 @@ Fitria Rahma Wulandari (1202190045)
 
   
 
-- Change the IP address to 10.0.3.111 in ubuntu_php7.4_2 and change IP Address to 10.0.3.123 in ubuntu_php7.4_3
+- Change the IP address to 10.0.3.111 in ubuntu_php7.4_2 
 
   ![3](https://user-images.githubusercontent.com/92453574/148256383-4ed9f83c-0fd2-4235-a3d9-1739226f733e.PNG)
 
@@ -48,36 +48,32 @@ Fitria Rahma Wulandari (1202190045)
 
   
 
-- Restart nginx and make curl. then start all container
+- Restart nginx and make curl
 
   ![7](https://user-images.githubusercontent.com/92453574/148256400-9df0671d-a2a4-4c2b-8719-622fed31ced4.PNG)
 
-- xx
+- Change the IP address to 10.0.3.121 in ubuntu_php7.4_3
 
   ![8](https://user-images.githubusercontent.com/92453574/148256403-b388e3a0-9ae9-420e-a865-d1c2f473dd5e.PNG)
-
-  
-
-- xx
 
   ![9](https://user-images.githubusercontent.com/92453574/148256409-95b80c9a-1a20-4d16-82b3-9a5c59382c6f.PNG)
 
   
 
-- xx
+- Go to etc/hosts to regidter lxc_php7_3.dev
 
   ![10](https://user-images.githubusercontent.com/92453574/148256412-6d256292-a0d7-44a3-bf4c-fc175755819e.PNG)
 
   
 
-- xx
+- Change the server name
 
   ![11](https://user-images.githubusercontent.com/92453574/148256415-c00fb359-ac6d-4042-a509-3e4156855f83.PNG)
 
 
   
 
-- xx
+- Restart nginx and make curl
 
   ![12](https://user-images.githubusercontent.com/92453574/148256359-e59c1ebe-169b-49ba-8016-e17a749a383a.PNG)
 
