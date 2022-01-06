@@ -90,7 +90,7 @@ Fitria Rahma Wulandari (1202190045)
   ![14](https://user-images.githubusercontent.com/92453574/148256822-77a227de-0164-4d5e-908f-b5651a668afe.PNG)
   
 
-- Register lxc_php5_2, /etc/hosts
+- Register lxc_php5_2 /etc/hosts
 
   ![15](https://user-images.githubusercontent.com/92453574/148256825-10a0e105-bf04-4ee2-8026-ab67388d45dc.PNG)
 
@@ -102,37 +102,37 @@ Fitria Rahma Wulandari (1202190045)
 
   
 
-- x
+- Restart nginx and curl it
 
   ![17](https://user-images.githubusercontent.com/92453574/148256833-4af698d8-996b-4fd1-b6ed-116dbab2cd5c.PNG)
 
   
 
-- s
+- Go to debian_php5.6_3 and change IP address to 10.0.3.122
 
   ![18](https://user-images.githubusercontent.com/92453574/148256837-e85f69e8-e415-4906-a562-1e26f0ed93c5.PNG)
 
   
 
-- s
+- Regist lxc_php5_2.dev /etc/hosts
 
   ![19](https://user-images.githubusercontent.com/92453574/148256846-284c1f4c-3f91-4484-80e8-94212fb98aef.PNG)
 
   
 
-- s
+- Change the server name
 
   ![20](https://user-images.githubusercontent.com/92453574/148256850-733dae1e-3e21-419e-9d77-232cf2968a5a.PNG)
 
   
 
-- x
+- Restart nginx and curl it
 
   ![21](https://user-images.githubusercontent.com/92453574/148256855-5ae882e0-e81d-4c4f-ae3f-6a03db1fe894.PNG)
 
   
 
-- xx
+- Regist all the container
 
   ![22](https://user-images.githubusercontent.com/92453574/148256866-cd4aaf10-5ff2-460b-9e51-13c4d9798aa9.PNG)
 
@@ -210,4 +210,4 @@ Fitria Rahma Wulandari (1202190045)
 
 Analysis
 
-xxx isien rap xxx
+if we use load balancer, then the time is faster and the amount of users that accessing our web is much more then when we don't use load balancer
