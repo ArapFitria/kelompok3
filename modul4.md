@@ -154,7 +154,7 @@ Fitria Rahma Wulandari (1202190045)
 
   ![29](https://user-images.githubusercontent.com/92453574/148266076-054a71e3-8871-428c-9237-8b1d01f652c6.png)
 
-  ![30](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\30.PNG)![31](D:\KULIAH\.tugas kuliah\sem 5\SAS\modul 4\31.PNG)
+  ![30](https://user-images.githubusercontent.com/92453574/148324939-c92623ff-8c32-4116-a549-f10a705a18d4.png)
 
   ![31](https://user-images.githubusercontent.com/92453574/148266080-a099b597-281e-4f9f-a9ba-8b35b93e0715.png)
   
