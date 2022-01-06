@@ -79,24 +79,24 @@ Fitria Rahma Wulandari (1202190045)
 
   
 
-- xx
+- Start all container
 
   ![13](https://user-images.githubusercontent.com/92453574/148256810-6cae00d2-ea9b-4caf-9242-d71ec1ee2fbf.PNG)
 
   
 
-- xx
+- Go to debian_php5.6_2 and change IP address to 10.0.3.112
 
   ![14](https://user-images.githubusercontent.com/92453574/148256822-77a227de-0164-4d5e-908f-b5651a668afe.PNG)
   
 
-- x
+- Register lxc_php5_2, /etc/hosts
 
   ![15](https://user-images.githubusercontent.com/92453574/148256825-10a0e105-bf04-4ee2-8026-ab67388d45dc.PNG)
 
   
 
-- x
+- Change the name server
 
   ![16](https://user-images.githubusercontent.com/92453574/148256828-52569a85-0e0a-43ae-9e14-bce121e627d8.PNG)
 
